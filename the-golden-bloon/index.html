@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Golden Bloon</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <script type="module" src="game.js"></script>
+    <header>
+
+    </header>
+
+    <div class="panel" id="title-panel">
+        <h1>The Golden Bloon</h1>
+        <p id="date-label">DAY 10</p>
+    </div>
+
+    <div class="panel-hidden" id="prompt-panel">
+        <p class="left-aligned" id="difficulty-label"></p>
+        <h2 class="left-aligned" id="prompt-label"></h2>
+        <p class="left-aligned">Rarer answers score more points.</p>
+    </div>
+
+    <div class="panel-hidden" id="result-panel">
+        <h1>Results</h1>
+    </div>
+
+    <div class="panel-hidden" id="answer-panel">
+        <h1 id="points-label">00</h1>
+        <input type="text" placeholder="type an answer">
+        <button id="btn-submit" class="btn">></button>
+    </div>
+
+    <div class="panel" id="desc-panel">
+        <h2>Find the rarest answer for 3 bloons-related prompts.</h2>
+        <p>After hitting play, you'll have 15 seconds to come up with an answer. Rarer answers score higher, and the rarest answer is given the title of Golden Bloon.</p>
+        <span></span>
+        <button id="btn-play" class="btn">Play</button>
+    </div>
+</body>
+</html>

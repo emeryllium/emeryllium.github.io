@@ -1,0 +1,62 @@
+[
+  {
+    "prompt": "Name a Bloons game.",
+    "answers": [
+      [
+        "Bloons TD 6"
+      ],
+      [
+        "Bloons Card Storm"
+      ],
+      [
+        "Hot Air Bloon"
+      ],
+      [
+        "Who Wants to be a Bloonionaire"
+      ],
+      []
+    ]
+  },
+  {
+    "prompt": "Name a map from any Bloons TD game.",
+    "answers": [
+      [
+        "Monkey Meadow"
+      ],
+      [
+        "Castle Revenge"
+      ],
+      [
+        "Easy Track (Bloons TD 2)",
+        "Party Parade"
+      ],
+      [
+        "Protect the Yacht"
+      ],
+      [
+        "Blons"
+      ]
+    ]
+  },
+  {
+    "prompt": "Name an ability in Bloons TD 6.",
+    "answers": [
+      [
+        "Super Monkey Fan Club"
+      ],
+      [
+        "Door Gunner"
+      ],
+      [
+        "Blast Chain"
+      ],
+      [
+        "Hype Boost"
+      ],
+      [
+        "Geraldo's Shop",
+        "Spellbook (Corvus)"
+      ]
+    ]
+  }
+]
