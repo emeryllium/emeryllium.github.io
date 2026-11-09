@@ -86,7 +86,7 @@ function next_prompt() {
 }
 
 function update_prompt() {
-    timer = 15;
+    timer = 25;
     document.getElementById('timer-label').textContent = timer;
     setTimeout(dec_timer.bind(this, prompt), 1000);
     if (prompt == 0) {
