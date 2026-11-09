@@ -167,21 +167,31 @@ function end_game() {
     document.getElementById('result-panel').classList.replace('panel', 'panel-hidden');
     document.getElementById('title-panel').classList.replace('panel-hidden', 'panel');
     document.getElementById('end-panel').classList.replace('panel-hidden', 'panel');
+    document.getElementById('copy-panel').classList.replace('panel-hidden', 'panel');
 }
 
-function copy_score() {
+async function copy_score() {
     let r = get_rarities(DAY_NUMBER);
-    navigator.clipboard.writeText(
+    let text = 
         'The Golden Bloon #' + DAY_NUMBER + '\n'
          + get_scores(DAY_NUMBER).total + ' - '
          + (r[0] == -1 ? '⬛' : RARITIES[r[0]].symbol)
          + (r[1] == -1 ? '⬛' : RARITIES[r[1]].symbol)
          + (r[2] == -1 ? '⬛' : RARITIES[r[2]].symbol)
-         + '\nhttps://emeryllium.github.io/the-golden-bloon/'
-    );
+         + '\nhttps://emeryllium.github.io/the-golden-bloon/';
+
+    await navigator.clipboard.writeText(text);
 }
 
-    // TODO: ADD AUTOCORRECT
+async function copy_image() {
+    const canvas = await html2canvas(document.getElementById('end-panel'), {
+        backgroundColor: '#0000',
+        scale: window.devicePixelRatio
+    });
+    const img = await new Promise(resolve => canvas.toBlob(resolve, "image/png"));
+    const clipboardItem = new ClipboardItem({"image/png": img,});
+    await navigator.clipboard.write([clipboardItem]);
+}
 
 function answer_auto(answer) {
     let min_comp = Number.MAX_SAFE_INTEGER;
@@ -304,6 +314,7 @@ document.querySelector('#btn-play').addEventListener('click', play);
 document.querySelector('#btn-submit').addEventListener('click', submit.bind(this, false));
 document.querySelector('#btn-next').addEventListener('click', next_prompt);
 document.querySelector('#btn-copy-score').addEventListener('click', copy_score);
+document.querySelector('#btn-copy-image').addEventListener('click', copy_image);
 document.querySelector('#answer-input').addEventListener('keyup', function(event) {
     if (event.key == 'Enter') {
         submit(false);
