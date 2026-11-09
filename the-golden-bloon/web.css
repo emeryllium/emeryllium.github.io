@@ -14,13 +14,14 @@ html {
 }
 
 body {
-    height: 90%;
+    min-height: 90vh; 
     padding: 24px;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     flex-direction: column;
     background: var(--bg);
+    gap: 24px;
 }
 
 h1, h2, h3 {
@@ -79,7 +80,7 @@ hr {
 }
 
 .panel { 
-    max-height: 90%;
+    max-height: 90vh;
     padding: 40px;
     overflow: hidden;
     background-image: linear-gradient(to bottom, var(--panel-top), var(--panel-bottom)); 

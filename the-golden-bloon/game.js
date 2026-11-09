@@ -7,20 +7,32 @@ let prompt = -1;
 let timer = -1;
 let DATA;
 
-const POINTS = [
-    25,
-    50,
-    80,
-    100,
-    60,
-]
-
 const RARITIES = [
-    "Red Bloon",
-    "Camo",
-    "DDT",
-    "The Golden Bloon",
-    "Too Clever",
+    {
+        name: 'Red Bloon',
+        points: 25,
+        symbol: '🎈'
+    },
+    {
+        name: 'Camo',
+        points: 50,
+        symbol: '🌳'
+    },
+    {
+        name: 'DDT',
+        points: 80,
+        symbol: '✴️'
+    },
+    {
+        name: 'The Golden Bloon',
+        points: 100,
+        symbol: '💫'
+    },
+    {
+        name: 'Camo Regro Fortified Red',
+        points: 60,
+        symbol: '🪀'
+    },
 ]
 
 const MS_START = Date.UTC(2026, 10, 9) + 18_000_000 // EST
@@ -62,8 +74,8 @@ function submit(force) {
 
     document.getElementById('result-answer-label').textContent = answer;
     if (rarity >= 0) {
-        document.getElementById('result-rarity-label').textContent = RARITIES[rarity];
-        document.getElementById('result-points-label').textContent = POINTS[rarity] + ' Points';
+        document.getElementById('result-rarity-label').textContent = RARITIES[rarity].name;
+        document.getElementById('result-points-label').textContent = RARITIES[rarity].points + ' Points';
     } else {
         document.getElementById('result-rarity-label').textContent = 'No answer.';
         document.getElementById('result-points-label').textContent = '0 Points';
@@ -131,6 +143,18 @@ function end_game() {
     document.getElementById('result-panel').classList.replace('panel', 'panel-hidden');
     document.getElementById('title-panel').classList.replace('panel-hidden', 'panel');
     document.getElementById('end-panel').classList.replace('panel-hidden', 'panel');
+}
+
+function copy_score() {
+    let r = rarities(DAY_NUMBER);
+    navigator.clipboard.writeText(
+        'The Golden Bloon #' + DAY_NUMBER + ' 🎈\n'
+         + scores(DAY_NUMBER).total + '\n\n'
+         + (r[0] == -1 ? '⬛' : RARITIES[r[0]].symbol)
+         + (r[1] == -1 ? '⬛' : RARITIES[r[1]].symbol)
+         + (r[2] == -1 ? '⬛' : RARITIES[r[2]].symbol)
+         + '\nhttps://emeryllium.github.io/the-golden-bloon/'
+    );
 }
 
     // TODO: ADD AUTOCORRECT
@@ -204,6 +228,14 @@ function answers(day) {
     return answers;
 }
 
+function rarities(day) {
+    let rarities = [];
+    for (let i = 0; i < 3; i++) {
+        rarities[i] = localStorage.getItem('answers.' + day + '.' + i + '.rarity');
+    }
+    return rarities;
+}
+
 function scores(day) {
     let scores = [];
     for (let i = 0; i < 3; i++) {
@@ -211,7 +243,7 @@ function scores(day) {
         if (rarity == -1) {
             scores[i] = 0;
         } else {
-            scores[i] = POINTS[rarity];
+            scores[i] = RARITIES[rarity].points;
         }
     }
     return {
@@ -223,4 +255,5 @@ function scores(day) {
 document.querySelector('#btn-play').addEventListener('click', play);
 document.querySelector('#btn-submit').addEventListener('click', submit.bind(this, false));
 document.querySelector('#btn-next').addEventListener('click', next_prompt);
+document.querySelector('#btn-copy-score').addEventListener('click', copy_score);
 init();
