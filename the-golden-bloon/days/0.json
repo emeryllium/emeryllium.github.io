@@ -10,7 +10,7 @@
         "C.H.I.M.P.S, CHIMPS"
       ],
       [
-        "Sandbox",
+        "Sandbox (Easy), Easy Sandbox, Sandbox",
         "Primary Monkeys Only",
         "Reverse",
         "Apopalypse",
@@ -20,13 +20,13 @@
         "Half Cash"
       ],
       [
-        "Sandbox (Easy), Easy Sandbox",
-        "Sandbox (Medium), Medium Sandbox",
         "Sandbox (Hard), Hard Sandbox",
         "Military Monkeys Only",
         "Double HP MOABs"
       ],
-      [],
+      [
+        "Sandbox (Medium), Medium Sandbox"
+      ],
       []
     ]
   },
