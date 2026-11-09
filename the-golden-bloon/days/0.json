@@ -3,29 +3,29 @@
     "prompt": "Name a gamemode in Bloons TD 6 (like Deflation)",
     "answers": [
       [
-        "Easy (Standard), Easy",
-        "Deflation",
-        "Medium (Standard), Medium",
-        "Hard (Standard), Hard",
-        "C.H.I.M.P.S, CHIMPS"
+        "Easy - Standard, Easy",
+        "Easy - Deflation, Deflation",
+        "Medium - Standard, Medium, Standard",
+        "Hard - Standard, Hard",
+        "Hard - C.H.I.M.P.S, C.H.I.M.P.S, CHIMPS"
       ],
       [
-        "Sandbox (Easy), Easy Sandbox, Sandbox",
-        "Primary Monkeys Only",
-        "Reverse",
-        "Apopalypse",
-        "Magic Monkeys Only",
-        "Alternate Bloons Rounds",
-        "Impoppable",
-        "Half Cash"
+        "Easy - Sandbox, Sandbox Easy, Sandbox",
+        "Easy - Primary Monkeys Only, Primary Monkeys Only, Primary Only",
+        "Medium - Reverse, Reverse",
+        "Medium - Apopalypse, Apopalypse",
+        "Hard - Magic Monkeys Only, Magic Monkeys Only, Magic Only",
+        "Hard - Alternate Bloons Rounds, Alternate Bloons Rounds, ABR",
+        "Hard - Impoppable, Impoppable",
+        "Hard - Half Cash, Half Cash"
       ],
       [
-        "Sandbox (Hard), Hard Sandbox",
-        "Military Monkeys Only",
-        "Double HP MOABs"
+        "Medium - Military Monkeys Only, Military Monkeys Only, Military Only",
+        "Hard - Sandbox, Sandbox Hard",
+        "Hard - Double HP MOABs, Double HP MOABs"
       ],
       [
-        "Sandbox (Medium), Medium Sandbox"
+        "Medium - Sandbox, Sandbox Medium"
       ],
       []
     ]
