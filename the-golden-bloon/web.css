@@ -41,19 +41,19 @@ h1, h2, h3 {
 
 h1 {
     margin: 0; 
-    font-size: clamp(2.5rem, 10vw, 5.0rem);  
+    font-size: clamp(2.0rem, 8vw, 5.0rem);  
     letter-spacing: 0.05em;
 }
 
 h2 {
     margin: 0; 
-    font-size: clamp(2rem, 8vw, 3.5rem);  
+    font-size: clamp(1.5rem, 6vw, 3.5rem);  
     letter-spacing: 0.05em;
 }
 
 h3 {
     margin: 0; 
-    font-size: clamp(1.5rem, 6vw, 2.0rem);  
+    font-size: clamp(1.0rem, 5vw, 2rem);  
     letter-spacing: 0.05em;
 }
 
@@ -71,7 +71,7 @@ input {
     padding: 12px;
     background: var(--text-outline);
     color: var(--text);
-    font-size: 24px;
+    font-size: clamp(0.6rem, 1.5vw, 1.5rem);
     letter-spacing: 0.1em;
     border-radius: 12px;
     text-transform: uppercase;
@@ -139,10 +139,10 @@ hr {
 #answer-panel {
     min-width: 60%;
     flex-wrap: wrap;
-    gap: 2vw;
+    gap: 5vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
