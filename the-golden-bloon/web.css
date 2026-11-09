@@ -31,9 +31,10 @@ body {
 h1, h2, h3 {
     color: var(--text);
     font-family: Tahoma, sans-serif;
-    text-shadow: 0 0.075em var(--text-outline);
+    text-shadow: 0 0.1em var(--text-outline);
     overflow-wrap: anywhere;
-    -webkit-text-stroke: 0.05em;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.1em;
     -webkit-text-stroke-color: var(--text-outline);
 }
 
@@ -63,9 +64,9 @@ p {
 
 input {
     width: 100%;
+    height: 100%;
     max-width: 300px;
     box-sizing: border-box;
-    height: 24px;
     padding: 12px;
     background: var(--text-outline);
     color: var(--text);
@@ -123,7 +124,8 @@ hr {
     padding: 8px 16px;
     cursor: pointer;
     font-weight: 700;
-    -webkit-text-stroke: 0.05em;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.1em;
     -webkit-text-stroke-color: var(--btn-outline);
 }
 
