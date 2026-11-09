@@ -1,6 +1,6 @@
 [
   {
-    "prompt": "Name a gamemode in Bloons TD 6 (like Deflation)",
+    "prompt": "Name a gamemode in Bloons TD 6 (like Easy - Deflation)",
     "answers": [
       [
         "Easy - Standard, Easy",
@@ -25,7 +25,7 @@
         "Hard - Double HP MOABs, Double HP MOABs"
       ],
       [
-        "Medium - Sandbox, Sandbox Medium"
+        "Medium - Sandbox, Sandbox Medium~For when you want a bit of a challenge, but not too much."
       ],
       []
     ]
@@ -37,35 +37,34 @@
         "Super Monkey Storm, SMS",
         "Cash Drop",
         "Banana Farmer, Monkey Farmer, Farmer",
-        "Road Spikes",
-        "Portable Lake",
-        "Tech Bot"
+        "Road Spikes"
       ],
       [
         "Monkey Boost",
         "Thrive",
         "Time Stop",
-        "Pontoon",
         "Glue Trap",
         "Moab Mine",
         "Camo Trap",
-        "Energizing Totem",
-        "Banana Farmer Pro",
-        "Super Monkey Beacon"
+        "Portable Lake",
+        "Tech Bot"
       ],
       [
+        "Energizing Totem",
+        "Pontoon",
+        "Banana Farmer Pro, Monkey Farmer Pro",
+        "Super Monkey Beacon",
         "Hype Boost Monkey",
         "Tech Bot Prime",
         "Sword of Power",
         "Sword of Protection",
-        "Battle Cat"
-      ],
-      [
+        "Battle Cat",
         "Havoc Staff"
       ],
       [
-        "Cave Monkey"
-      ]
+        "Cave Monkey~Unlockable only after hitting the Cave Monkey hole in Frozen Over 50 thousand times."
+      ],
+      []
     ]
   },
   {
@@ -103,12 +102,11 @@
         "Bloons TD 6 Console, BTD6 Console, Bloons TD 6 Xbox, BTD6 Xbox, Bloons TD 6 Playstation, BTD 6 Playstation, Bloons TD 6 Switch, BTD6 Switch"
       ],
       [
-        "Bloons TD 4 Expansion, BTD4 Expansion",
-        "Bloons TD Battles 2+, BTD Battles 2+, BTDB2+, Bloons TD Battles 2 Apple Arcade, BTD Battles 2 Apple Arcade, BTDB2 Apple Arcade"
+        "Bloons TD 4 Expansion, BTD4 Expansion~The first game to feature Deflation mode.",
+        "Bloons TD Battles 2+, BTD Battles 2+, BTDB2+, Bloons TD Battles 2 Apple Arcade, BTD Battles 2 Apple Arcade, BTDB2 Apple Arcade~This app comes with Apple Arcade and includes free Club Membership.",
+        "Qìqiú Tǎ Fáng 6, 气球塔防6, Bloons TD 6 China, BTD6 China, Bloons TD 6 Chinese, BTD6 Chinese, Bloons TD 6 TapTap, BTD6 TapTap~Developed by XD Inc. for the Chinese audience."
       ],
-      [
-        "气球塔防6 (TapTap), 气球塔防6, Bloons TD 6 China, BTD6 China, Bloons TD 6 Chinese, BTD6 Chinese, Bloons TD 6 TapTap, BTD6 TapTap"
-      ]
+      [] 
     ]
   }
 ]

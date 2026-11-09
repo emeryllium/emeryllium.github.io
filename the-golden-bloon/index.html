@@ -9,7 +9,7 @@
 <body>
     <script type="module" src="game.js"></script>
     <header>
-        <p class="right-aligned">alpha 0.2.5</p>        <!--VERSION NUM-->
+        <p class="right-aligned">alpha 0.2.6</p>        <!--VERSION NUM-->
     </header>
 
     <div class="panel" id="title-panel">
@@ -25,6 +25,7 @@
 
     <div class="panel-hidden" id="result-panel">
         <h2 id="result-answer-label">Answer</h2>
+        <p id="result-desc-label"></p>
         <h3 id="result-rarity-label">Red Bloon</h3>
         <p id="result-points-label">10 points</p>
         <button id="btn-next" class="btn">></button>
@@ -35,12 +36,15 @@
         <hr>
         <p class="left-aligned" id="end-easy-label">EASY - Prompt 1</p>
         <h3 class="left-aligned" id="end-easy-answer-label">Answer 1 - 10 points</h3>
+        <p class="left-aligned" id="end-easy-desc-label"></p>
         <hr>
         <p class="left-aligned" id="end-medium-label">MEDIUM - Prompt 2</p>
         <h3 class="left-aligned" id="end-medium-answer-label">Answer 2 - 10 points</h3>
+        <p class="left-aligned" id="end-medium-desc-label"></p>
         <hr>
         <p class="left-aligned" id="end-hard-label">HARD - Prompt 3</p>
         <h3 class="left-aligned" id="end-hard-answer-label">Answer 3 - 10 points</h3>
+        <p class="left-aligned" id="end-hard-desc-label"></p>
         <hr>
         <button id="btn-copy-score" class="btn">Copy Score to Clipboard</button>
     </div>

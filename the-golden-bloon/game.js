@@ -7,6 +7,12 @@ let prompt = -1;
 let timer = -1;
 let DATA;
 
+const QUESTIONS = [
+    'Easy',
+    'Medium',
+    'Hard'
+]
+
 const RARITIES = [
     {
         name: 'Red Bloon',
@@ -59,7 +65,12 @@ function play() {
 }
 
 function submit(force) {
-    let answer = answer_auto(document.getElementById('answer-input').value);
+    let input = document.getElementById('answer-input').value;
+    let answer = answer_auto(input);
+    if (input.toLowerCase() != answer.toLowerCase()) {
+        document.getElementById('answer-input').value = answer;
+        return;
+    }
     if (!answer && !force) {
         return;
     }
@@ -68,11 +79,14 @@ function submit(force) {
         answer = "";
     }
     let rarity = answer_rarity(answer, prompt);
+    let desc = answer_desc(answer, prompt);
 
     localStorage.setItem('answers.' + DAY_NUMBER + '.' + prompt + '.answer', answer);
     localStorage.setItem('answers.' + DAY_NUMBER + '.' + prompt + '.rarity', rarity);
+    localStorage.setItem('answers.' + DAY_NUMBER + '.' + prompt + '.desc', desc);
 
     document.getElementById('result-answer-label').textContent = answer;
+    document.getElementById('result-desc-label').textContent = desc ? desc : '';
     if (rarity >= 0) {
         document.getElementById('result-rarity-label').textContent = RARITIES[rarity].name;
         document.getElementById('result-points-label').textContent = RARITIES[rarity].points + ' Points';
@@ -129,13 +143,23 @@ function dec_timer(prompt_num) {
 }
 
 function end_game() {
-    document.getElementById('end-points-label').textContent = scores(DAY_NUMBER).total + ' POINTS';
+    let scores = get_scores(DAY_NUMBER);
+    let answers = get_answers(DAY_NUMBER);
+    let descriptions = get_descriptions(DAY_NUMBER);
+
+    document.getElementById('end-points-label').textContent = scores.total + ' POINTS';
+
     document.getElementById('end-easy-label').textContent = 'EASY - ' + DATA[0].prompt;
-    document.getElementById('end-easy-answer-label').textContent = answers(DAY_NUMBER)[0] + ' - ' + scores(DAY_NUMBER).individual[0] + ' points';
     document.getElementById('end-medium-label').textContent = 'MEDIUM - ' + DATA[1].prompt;
-    document.getElementById('end-medium-answer-label').textContent = answers(DAY_NUMBER)[1] + ' - ' + scores(DAY_NUMBER).individual[1] + ' points';
     document.getElementById('end-hard-label').textContent = 'HARD - ' + DATA[2].prompt;
-    document.getElementById('end-hard-answer-label').textContent = answers(DAY_NUMBER)[2] + ' - ' + scores(DAY_NUMBER).individual[2] + ' points';
+
+    document.getElementById('end-easy-answer-label').textContent = answers[0] + ' - ' + scores.individual[0] + ' points';
+    document.getElementById('end-medium-answer-label').textContent = answers[1] + ' - ' + scores.individual[1] + ' points';
+    document.getElementById('end-hard-answer-label').textContent = answers[2] + ' - ' + scores.individual[2] + ' points';
+
+    document.getElementById('end-easy-desc-label').textContent = descriptions[0] == 'null' ? '' : descriptions[0];
+    document.getElementById('end-medium-desc-label').textContent = descriptions[1] == 'null' ? '' : descriptions[1];
+    document.getElementById('end-hard-desc-label').textContent = descriptions[2] == 'null' ? '' : descriptions[2];
     
     document.getElementById('desc-panel').classList.replace('panel', 'panel-hidden');
     document.getElementById('prompt-panel').classList.replace('panel', 'panel-hidden');
@@ -146,10 +170,10 @@ function end_game() {
 }
 
 function copy_score() {
-    let r = rarities(DAY_NUMBER);
+    let r = get_rarities(DAY_NUMBER);
     navigator.clipboard.writeText(
-        'The Golden Bloon #' + DAY_NUMBER + ' 🎈\n'
-         + scores(DAY_NUMBER).total + '\n\n'
+        'The Golden Bloon #' + DAY_NUMBER + '\n'
+         + get_scores(DAY_NUMBER).total + ' - '
          + (r[0] == -1 ? '⬛' : RARITIES[r[0]].symbol)
          + (r[1] == -1 ? '⬛' : RARITIES[r[1]].symbol)
          + (r[2] == -1 ? '⬛' : RARITIES[r[2]].symbol)
@@ -164,9 +188,9 @@ function answer_auto(answer) {
     let min_ans = "";
     for (const rarity of DATA[prompt].answers) {
         for (const aliases_concat of rarity) {
-            const aliases = aliases_concat.split(",");
+            const aliases = aliases_concat.split('~')[0].split(',');
             for (const alias of aliases) {
-                let comp = answer_comp(alias.toLowerCase().replace(/\s/g, ''), answer.toLowerCase().replace(/\s/g, ''));
+                let comp = answer_comp(normalize_string(alias).replace(/\s/g, ''), normalize_string(answer).replace(/\s/g, ''));
                 if (comp < min_comp) {
                     min_comp = comp;
                     min_ans = aliases[0];
@@ -181,16 +205,28 @@ function answer_auto(answer) {
     }
 }
 
-let answer_rarity = (answer) => {
+function answer_rarity(answer) {
     for (const i of RARITIES.keys()) {
         for (const alias_concat of DATA[prompt].answers[i]) {
-            if (answer == alias_concat.split(",")[0]) {
+            if (answer == alias_concat.split('~')[0].split(',')[0]) {
                 return i;
             }
         }
     }
     return -1;
-};
+}
+
+function answer_desc(answer) {
+    for (const i of RARITIES.keys()) {
+        for (const alias_concat of DATA[prompt].answers[i]) {
+            var aliases = alias_concat.split('~');
+            if (answer == aliases[0].split(',')[0]) {
+                return aliases.length >= 2 ? aliases[1] : null;
+            }
+        }
+    }
+    return null;
+}
 
 // Levenshtein distance
 function answer_comp(s, t) {
@@ -215,9 +251,13 @@ function answer_comp(s, t) {
     return dp[s.length][t.length];
 }
 
-function answers(day) {
+function normalize_string(s) {
+    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+}
+
+function get_answers(day) {
     let answers = [];
-    for (let i = 0; i < 3; i++) {
+    for (const i of QUESTIONS.keys()) {
         let answer = localStorage.getItem('answers.' + day + '.' + i + '.answer');
         if (!answer) {
             answers[i] = 'No answer.';
@@ -228,17 +268,25 @@ function answers(day) {
     return answers;
 }
 
-function rarities(day) {
+function get_rarities(day) {
     let rarities = [];
-    for (let i = 0; i < 3; i++) {
+    for (const i of QUESTIONS.keys()) {
         rarities[i] = localStorage.getItem('answers.' + day + '.' + i + '.rarity');
     }
     return rarities;
 }
 
-function scores(day) {
+function get_descriptions(day) {
+    let descriptions = [];
+    for (const i of QUESTIONS.keys()) {
+        descriptions[i] = localStorage.getItem('answers.' + day + '.' + i + '.desc');
+    }
+    return descriptions;
+}
+
+function get_scores(day) {
     let scores = [];
-    for (let i = 0; i < 3; i++) {
+    for (const i of QUESTIONS.keys()) {
         let rarity = localStorage.getItem('answers.' + day + '.' + i + '.rarity')
         if (rarity == -1) {
             scores[i] = 0;
@@ -256,4 +304,9 @@ document.querySelector('#btn-play').addEventListener('click', play);
 document.querySelector('#btn-submit').addEventListener('click', submit.bind(this, false));
 document.querySelector('#btn-next').addEventListener('click', next_prompt);
 document.querySelector('#btn-copy-score').addEventListener('click', copy_score);
+document.querySelector('#answer-input').addEventListener('keyup', function(event) {
+    if (event.key == 'Enter') {
+        submit(false);
+    }
+})
 init();
