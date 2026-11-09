@@ -1,61 +1,108 @@
 [
   {
-    "prompt": "Name a Bloons game.",
+    "prompt": "Name a gamemode in Bloons TD 6 (like Deflation)",
     "answers": [
       [
-        "Bloons TD 6"
+        "Easy (Standard), Easy",
+        "Deflation",
+        "Medium (Standard), Medium",
+        "Hard (Standard), Hard",
+        "C.H.I.M.P.S, CHIMPS"
       ],
       [
-        "Bloons Card Storm"
+        "Primary Monkeys Only",
+        "Reverse",
+        "Apopalypse",
+        "Magic Monkeys Only",
+        "Alternate Bloons Rounds",
+        "Impoppable",
+        "Half Cash"
       ],
       [
-        "Hot Air Bloon"
+        "Military Monkeys Only",
+        "Douple HP MOABs"
       ],
-      [
-        "Who Wants to be a Bloonionaire"
-      ],
+      [],
       []
     ]
   },
   {
-    "prompt": "Name a map from any Bloons TD game.",
+    "prompt": "Name a power in BTD6.",
     "answers": [
       [
-        "Monkey Meadow"
+        "Super Monkey Storm, SMS",
+        "Cash Drop",
+        "Banana Farmer, Monkey Farmer, Farmer",
+        "Road Spikes",
+        "Portable Lake",
+        "Tech Bot"
       ],
       [
-        "Castle Revenge"
+        "Monkey Boost",
+        "Thrive",
+        "Time Stop",
+        "Pontoon",
+        "Glue Trap",
+        "Moab Mine",
+        "Camo Trap",
+        "Energizing Totem",
+        "Banana Farmer Pro",
+        "Super Monkey Beacon"
       ],
       [
-        "Easy Track (Bloons TD 2)",
-        "Party Parade"
+        "Hype Boost Monkey",
+        "Tech Bot Prime",
+        "Sword of Protection",
+        "Battle Cat"
       ],
       [
-        "Protect the Yacht"
+        "Havoc Staff"
       ],
       [
-        "Blons"
+        "Cave Monkey"
       ]
     ]
   },
   {
-    "prompt": "Name an ability in Bloons TD 6.",
+    "prompt": "Name a Bloons Game with Tower Defense/TD in the name.",
     "answers": [
       [
-        "Super Monkey Fan Club"
+        "Bloons Tower Defense, Bloons TD, BTD",
+        "Bloons TD 4, BTD4",
+        "Bloons TD 5 Mobile, BTD5 Mobile, Bloons TD 5, BTD5",
+        "Bloons TD Battles Mobile, BTD Battles Mobile, Bloons TD Battles, BTD Battles, BTDB",
+        "Bloons TD Battles 2 Mobile, BTD Battles 2 Mobile, Bloons TD Battles 2, BTD Battles 2, BTDB2",
+        "Bloons TD 6, BTD6"
       ],
       [
-        "Door Gunner"
+        "Bloons Tower Defense 2, Bloons TD 2, BTD2",
+        "Bloons Tower Defense 3, Bloons TD 3, BTD3",
+        "Bloons TD 5 Flash, BTD5 Flash",
+        "Bloons TD 5 Deluxe, BTD5 Deluxe",
+        "Bloons TD 5 Steam, BTD5 Steam",
+        "Bloons TD Battles Flash, BTD Battles Flash, BTDB Flash",
+        "Bloons TD Battles Steam, BTD Battles Steam, BTDB Steam",
+        "Bloons TD Battles2 Steam, BTD Battles2 Steam, BTDB2 Steam"
       ],
       [
-        "Blast Chain"
+        "Bloons Tower Defense (iOS), BTD iOS, Bloons Tower Defense Mobile, BTD Mobile",
+        "Bloons Tower Defense (PSN), Bloons Tower Defense Playstation, Bloons Tower Defense Playstation Network",
+        "Bloons Tower Defense (DSi), BTD DSi",
+        "Bloons TD 4 (iOS), BTD4 iOS, Bloons TD 4 Mobile, BTD4 Mobile",
+        "Bloons TD 4 (DSi), BTD4 DSi",
+        "Bloons TD 5 HD, BTD5 HD",
+        "Bloons TD 5 Console, BTD5 Console, Bloons TD 5 Xbox, BTD5 Xbox, Bloons TD 5 Playstation, BTD 5 Playstation, Bloons TD 5 Switch, BTD5 Switch",
+        "Bloons Adventure Time TD, BATTD",
+        "Bloons TD 6+, BTD6+, Bloons TD 6 Apple Arcade, BTD6 Apple Arcade",
+        "Bloons TD 6 NETFLIX, BTD6 NETFLIX",
+        "Bloons TD 6 Console, BTD6 Console, Bloons TD 6 Xbox, BTD6 Xbox, Bloons TD 6 Playstation, BTD 6 Playstation, Bloons TD 6 Switch, BTD6 Switch"
       ],
       [
-        "Hype Boost"
+        "Bloons TD 4 Expansion, BTD4 Expansion",
+        "Bloons TD Battles 2+, BTD Battles 2+, BTDB2+, Bloons TD Battles 2 Apple Arcade, BTD Battles 2 Apple Arcade, BTDB2 Apple Arcade"
       ],
       [
-        "Geraldo's Shop",
-        "Spellbook (Corvus)"
+        "气球塔防6 (TapTap), 气球塔防6, Bloons TD 6 China, BTD6 China, Bloons TD 6 Chinese, BTD6 Chinese, Bloons TD 6 TapTap, BTD6 TapTap"
       ]
     ]
   }

@@ -23,7 +23,7 @@ body {
     background: var(--bg);
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: var(--text);
     font-family: Tahoma, sans-serif;
     text-shadow: 0 0.075em var(--text-outline);
@@ -38,6 +38,12 @@ h1 {
 }
 
 h2 {
+    margin: 0; 
+    font-size: 3.5rem;  
+    letter-spacing: 0.05em;
+}
+
+h3 {
     margin: 0; 
     font-size: 2.0rem;  
     letter-spacing: 0.05em;
@@ -59,6 +65,13 @@ input {
     letter-spacing: 0.1em;
     border-radius: 12px;
     text-transform: uppercase;
+}
+
+hr {
+    margin-top: 40px;
+    border-width: 0;
+    height: 2px;
+    background-color: var(--text-outline);
 }
 
 .left-aligned {

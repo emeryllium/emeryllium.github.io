@@ -24,17 +24,33 @@
     </div>
 
     <div class="panel-hidden" id="result-panel">
-        <h1>Results</h1>
+        <h2 id="result-answer-label">Answer</h2>
+        <h3 id="result-rarity-label">Red Bloon</h3>
+        <p id="result-points-label">10 points</p>
+        <button id="btn-next" class="btn">></button>
+    </div>
+
+    <div class="panel-hidden" id="end-panel">
+        <h2 class="left-aligned" id="end-points-label">150 POINTS</h2>
+        <hr>
+        <p class="left-aligned" id="end-easy-label">EASY - Prompt 1</p>
+        <h3 class="left-aligned" id="end-easy-answer-label">Answer 1 - 10 points</h3>
+        <hr>
+        <p class="left-aligned" id="end-medium-label">MEDIUM - Prompt 2</p>
+        <h3 class="left-aligned" id="end-medium-answer-label">Answer 2 - 10 points</h3>
+        <hr>
+        <p class="left-aligned" id="end-hard-label">HARD - Prompt 3</p>
+        <h3 class="left-aligned" id="end-hard-answer-label">Answer 3 - 10 points</h3>
     </div>
 
     <div class="panel-hidden" id="answer-panel">
-        <h1 id="points-label">00</h1>
-        <input type="text" placeholder="type an answer">
+        <h1 id="timer-label">0</h1>
+        <input type="text" placeholder="type an answer" id="answer-input">
         <button id="btn-submit" class="btn">></button>
     </div>
 
     <div class="panel" id="desc-panel">
-        <h2>Find the rarest answer for 3 bloons-related prompts.</h2>
+        <h3>Find the rarest answer for 3 bloons-related prompts.</h3>
         <p>After hitting play, you'll have 15 seconds to come up with an answer. Rarer answers score higher, and the rarest answer is given the title of Golden Bloon.</p>
         <span></span>
         <button id="btn-play" class="btn">Play</button>
