@@ -4,7 +4,8 @@
     --text-outline: #2e2824;
     --panel-top: #af946c;
     --panel-bottom: #a18065;
-    --btn: #00FF00;
+    --btn: #61ff31;
+    --btn-shadow: #00d800;
     --btn-outline: #008500;
     --btn-glow: #ffffff;
 }
@@ -118,21 +119,26 @@ hr {
     color: var(--text);
     font-size: clamp(2rem, 8vw, 3.5rem);
     border-style: solid;
-    border-width: 8px;
-    border-color: var(--btn-outline);
-    border-radius: 24px;
+    border-width: 4px;
+    border-color: var(--btn-shadow);
+    border-radius: 12px;
+    box-shadow: 0 0 0 2px var(--btn-outline), 0 0 0 6px var(--btn-glow);
     padding: 8px 16px;
     cursor: pointer;
     font-weight: 700;
     paint-order: stroke fill;
     -webkit-text-stroke: 0.1em;
-    -webkit-text-stroke-color: var(--btn-outline);
+    -webkit-text-stroke-color: var(--btn-shadow);
+}
+
+.btn:hover {
+    text-shadow: 0 0 12px var(--btn-glow);
 }
 
 #answer-panel {
     min-width: 40%;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
