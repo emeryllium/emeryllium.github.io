@@ -32,6 +32,7 @@ h1, h2, h3 {
     color: var(--text);
     font-family: Tahoma, sans-serif;
     text-shadow: 0 0.075em var(--text-outline);
+    overflow-wrap: anywhere;
     -webkit-text-stroke: 0.05em;
     -webkit-text-stroke-color: var(--text-outline);
 }
@@ -90,7 +91,9 @@ hr {
 }
 
 .panel { 
+    max-width: 90vw;
     max-height: 90vh;
+    box-sizing: border-box;
     padding: clamp(16px, 5vw, 40px);
     overflow: hidden;
     background-image: linear-gradient(to bottom, var(--panel-top), var(--panel-bottom)); 
@@ -112,7 +115,7 @@ hr {
 .btn {
     background: var(--btn);
     color: var(--text);
-    font-size: 3.0rem;
+    font-size: clamp(2rem, 8vw, 3.5rem);
     border-style: solid;
     border-width: 8px;
     border-color: var(--btn-outline);
