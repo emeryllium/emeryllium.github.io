@@ -17,27 +17,32 @@ const RARITIES = [
     {
         name: 'Red Bloon',
         points: 25,
-        symbol: '🎈'
+        symbol: '🎈',
+        icon: 'assets/red_bloon.webp'
     },
     {
         name: 'Camo',
         points: 50,
-        symbol: '🌳'
+        symbol: '🌳',
+        icon: 'assets/camo_bloon.webp'
     },
     {
         name: 'DDT',
         points: 80,
-        symbol: '✴️'
+        symbol: '✴️',
+        icon: 'assets/ddt.webp'
     },
     {
         name: 'The Golden Bloon',
         points: 100,
-        symbol: '💫'
+        symbol: '💫',
+        icon: 'assets/golden_bloon.webp'
     },
     {
         name: 'Camo Regro Fortified Red',
         points: 60,
-        symbol: '🪀'
+        symbol: '🪀',
+        icon: 'assets/camgrow_red.webp'
     },
 ]
 
@@ -67,12 +72,14 @@ function play() {
 function submit(force) {
     let input = document.getElementById('answer-input').value;
     let answer = answer_auto(input);
-    if (input.toLowerCase() != answer.toLowerCase()) {
-        document.getElementById('answer-input').value = answer;
-        return;
-    }
-    if (!answer && !force) {
-        return;
+    if (!force) {
+        if (!answer) {
+            return;
+        }
+        if (input.toLowerCase() != answer.toLowerCase()) {
+            document.getElementById('answer-input').value = answer;
+            return;
+        }
     }
     timer = -1;
     if (!answer) {

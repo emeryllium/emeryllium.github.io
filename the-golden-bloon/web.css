@@ -93,6 +93,13 @@ hr {
     text-align: right;
 }
 
+.hdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .panel { 
     max-width: 90vw;
     max-height: 90vh;
@@ -113,6 +120,11 @@ hr {
     border-radius: 12px; 
     text-align: center;
     transition: all .3s ease;
+}
+
+.icon {
+    height: 2rem;
+    padding: 1vw;
 }
 
 .btn {
