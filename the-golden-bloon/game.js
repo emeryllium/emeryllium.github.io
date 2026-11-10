@@ -185,12 +185,25 @@ async function copy_score() {
 
 async function copy_image() {
     const canvas = await html2canvas(document.getElementById('end-panel'), {
-        backgroundColor: '#0000',
-        scale: window.devicePixelRatio
+        backgroundColor: null,
+        scale: window.devicePixelRatio,
+        useCORS: true
     });
     const img = await new Promise(resolve => canvas.toBlob(resolve, "image/png"));
-    const clipboardItem = new ClipboardItem({"image/png": img,});
-    await navigator.clipboard.write([clipboardItem]);
+    try {
+        await navigator.clipboard.write([new ClipboardItem({"image/png": img,})]);
+    } catch {
+        const url = URL.createObjectURL(img);
+        const link = document.createElement('a');
+
+        link.href = url;
+        link.download = 'SPOILER_THE-GOLDEN-BLOON_' + DAY_NUMBER + '.png';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
 }
 
 function answer_auto(answer) {
