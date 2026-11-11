@@ -29,7 +29,7 @@ const RARITIES = [
     {
         name: 'DDT',
         points: 80,
-        symbol: '✴️',
+        symbol: '💿',
         icon: 'assets/ddt.webp'
     },
     {
@@ -182,9 +182,9 @@ async function copy_score() {
     let text = 
         'The Golden Bloon #' + DAY_NUMBER + '\n'
          + get_scores(DAY_NUMBER).total + ' - '
-         + (r[0] == -1 ? '⬛' : RARITIES[r[0]].symbol)
-         + (r[1] == -1 ? '⬛' : RARITIES[r[1]].symbol)
-         + (r[2] == -1 ? '⬛' : RARITIES[r[2]].symbol)
+         + (r[0] == -1 ? '🔳' : RARITIES[r[0]].symbol)
+         + (r[1] == -1 ? '🔳' : RARITIES[r[1]].symbol)
+         + (r[2] == -1 ? '🔳' : RARITIES[r[2]].symbol)
          + '\nhttps://emeryllium.github.io/the-golden-bloon/';
 
     await navigator.clipboard.writeText(text);

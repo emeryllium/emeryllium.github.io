@@ -63,7 +63,8 @@
       ],
       [
         "Sentry Paragon~Renamed to avoid confusion with paragons.",
-        "Soulbind~This upgrade used to sacrifice your own towers to keep you alive."
+        "Soulbind~This upgrade used to sacrifice your own towers to keep you alive.",
+        "Superstorm, Super Storm"
       ],
       []
     ]
@@ -240,14 +241,16 @@
     ]
   },
   {
-    "prompt": "Name an arena from Bloons TD Battles.",
+    "prompt": "Name an arena from Bloons TD Battles or Bloons TD Battles 2.",
     "answers": [
       [
+        "Red Bloon Camp",
         "Yellow Stadium",
-        "White Wasteland",
-        "Ceramic Crucible"
+        "Ceramic Crucible",
+        "Hall of Masters"
       ],
       [
+        "White Wasteland",
         "Lead Dungeon",
         "Rainbow Ruins",
         "MOAB Pit",
