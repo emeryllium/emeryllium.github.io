@@ -16,31 +16,61 @@ const QUESTIONS = [
 const RARITIES = [
     {
         name: 'Red Bloon',
-        points: 25,
+        points: [
+            10,
+            15,
+            20
+        ],
         symbol: '🎈',
         icon: 'assets/red_bloon.webp'
     },
     {
+        name: 'Pink Bloon',
+        points: [
+            25,
+            35,
+            50
+        ],
+        symbol: '🩷',
+        icon: 'assets/pink_bloon.webp'
+    },
+    {
         name: 'Camo',
-        points: 50,
+        points: [
+            50,
+            70,
+            100
+        ],
         symbol: '🌳',
         icon: 'assets/camo_bloon.webp'
     },
     {
         name: 'DDT',
-        points: 80,
+        points: [
+            75,
+            100,
+            150
+        ],
         symbol: '💿',
         icon: 'assets/ddt.webp'
     },
     {
         name: 'The Golden Bloon',
-        points: 100,
+        points: [
+            100,
+            150,
+            250
+        ],
         symbol: '💫',
         icon: 'assets/golden_bloon.webp'
     },
     {
         name: 'Camo Regro Fortified Red',
-        points: 60,
+        points: [
+            99,
+            99,
+            99
+        ],
         symbol: '🪀',
         icon: 'assets/camgrow_red.webp'
     },
@@ -96,7 +126,7 @@ function submit(force) {
     document.getElementById('result-desc-label').textContent = desc ? desc : '';
     if (rarity >= 0) {
         document.getElementById('result-rarity-label').textContent = RARITIES[rarity].name;
-        document.getElementById('result-points-label').textContent = RARITIES[rarity].points + ' Points';
+        document.getElementById('result-points-label').textContent = RARITIES[rarity].points[prompt] + ' Points';
     } else {
         document.getElementById('result-rarity-label').textContent = 'No answer.';
         document.getElementById('result-points-label').textContent = '0 Points';
@@ -321,7 +351,7 @@ function get_scores(day) {
         if (rarity == -1) {
             scores[i] = 0;
         } else {
-            scores[i] = RARITIES[rarity].points;
+            scores[i] = RARITIES[rarity].points[i];
         }
     }
     return {
