@@ -8,9 +8,18 @@ let timer = -1;
 let DATA;
 
 const QUESTIONS = [
-    'Easy',
-    'Medium',
-    'Hard'
+    {
+        name: 'Easy',
+        icon: 'assets/easy.webp'
+    },
+    {
+        name: 'Medium',
+        icon: 'assets/medium.webp'
+    },
+    {
+        name: 'Hard',
+        icon: 'assets/hard.webp'
+    }
 ]
 
 const RARITIES = [
@@ -125,6 +134,7 @@ function submit(force) {
     document.getElementById('result-answer-label').textContent = answer;
     document.getElementById('result-desc-label').textContent = desc ? desc : '';
     if (rarity >= 0) {
+        document.getElementById('result-rarity-icon').src = RARITIES[rarity].icon;
         document.getElementById('result-rarity-label').textContent = RARITIES[rarity].name;
         document.getElementById('result-points-label').textContent = RARITIES[rarity].points[prompt] + ' Points';
     } else {
@@ -152,18 +162,9 @@ function update_prompt() {
     timer = 25;
     document.getElementById('timer-label').textContent = timer;
     setTimeout(dec_timer.bind(this, prompt), 1000);
-    if (prompt == 0) {
-        document.getElementById('difficulty-label').textContent = "EASY";
-        document.getElementById('prompt-label').textContent = DATA[0].prompt;
-    }
-    else if (prompt == 1) {
-        document.getElementById('difficulty-label').textContent = "MEDIUM";
-        document.getElementById('prompt-label').textContent = DATA[1].prompt;
-    }
-    else if (prompt == 2) {
-        document.getElementById('difficulty-label').textContent = "HARD";
-        document.getElementById('prompt-label').textContent = DATA[2].prompt;
-    }
+    document.getElementById('difficulty-icon').src = QUESTIONS[prompt].icon;
+    document.getElementById('difficulty-label').textContent = QUESTIONS[prompt].name;
+    document.getElementById('prompt-label').textContent = DATA[prompt].prompt;
 }
 
 function dec_timer(prompt_num) {
@@ -180,15 +181,20 @@ function dec_timer(prompt_num) {
 }
 
 function end_game() {
+    let rarities = get_rarities(DAY_NUMBER);
     let scores = get_scores(DAY_NUMBER);
     let answers = get_answers(DAY_NUMBER);
     let descriptions = get_descriptions(DAY_NUMBER);
 
     document.getElementById('end-points-label').textContent = scores.total + ' POINTS';
 
-    document.getElementById('end-easy-label').textContent = 'EASY - ' + DATA[0].prompt;
-    document.getElementById('end-medium-label').textContent = 'MEDIUM - ' + DATA[1].prompt;
-    document.getElementById('end-hard-label').textContent = 'HARD - ' + DATA[2].prompt;
+    if (rarities[0] >= 0) document.getElementById('end-easy-icon').src = RARITIES[rarities[0]].icon;
+    if (rarities[1] >= 0) document.getElementById('end-medium-icon').src = RARITIES[rarities[1]].icon;
+    if (rarities[2] >= 0) document.getElementById('end-hard-icon').src = RARITIES[rarities[2]].icon;
+
+    document.getElementById('end-easy-label').textContent = QUESTIONS[0].name + ' - ' + DATA[0].prompt;
+    document.getElementById('end-medium-label').textContent = QUESTIONS[1].name + ' - ' + DATA[1].prompt;
+    document.getElementById('end-hard-label').textContent = QUESTIONS[2].name + ' - ' + DATA[2].prompt;
 
     document.getElementById('end-easy-answer-label').textContent = answers[0] + ' - ' + scores.individual[0] + ' points';
     document.getElementById('end-medium-answer-label').textContent = answers[1] + ' - ' + scores.individual[1] + ' points';

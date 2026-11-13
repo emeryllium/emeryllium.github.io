@@ -10,7 +10,7 @@
     <script type="module" src="game.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <header>
-        <p class="right-aligned">alpha 0.2.10</p>        <!--VERSION NUM-->
+        <p class="right-aligned">alpha 0.2.11</p>        <!--VERSION NUM-->
     </header>
 
     <div class="panel" id="title-panel">
@@ -22,7 +22,10 @@
     </div>
 
     <div class="panel-hidden" id="prompt-panel">
-        <p class="left-aligned" id="difficulty-label"></p>
+        <div class="hdiv">
+            <img class="big-icon" src="assets/easy.webp" id="difficulty-icon">
+            <h3 id="difficulty-label"></h3>
+        </div>
         <h2 class="left-aligned" id="prompt-label"></h2>
         <p class="left-aligned">Rarer answers score more points.</p>
     </div>
@@ -30,7 +33,10 @@
     <div class="panel-hidden" id="result-panel">
         <h2 id="result-answer-label">Answer</h2>
         <p id="result-desc-label"></p>
-        <h3 id="result-rarity-label">Red Bloon</h3>
+        <div class="hdiv">
+            <img class="icon" src="assets/invisible_bloon.webp" id="result-rarity-icon">
+            <h3 class="left-aligned" id="result-rarity-label">Red Bloon</h3>
+        </div>
         <p id="result-points-label">10 points</p>
         <button id="btn-next" class="btn">></button>
     </div>
@@ -38,17 +44,32 @@
     <div class="panel-hidden" id="end-panel">
         <h2 class="left-aligned" id="end-points-label">150 POINTS</h2>
         <hr>
-        <p class="left-aligned" id="end-easy-label">EASY - Prompt 1</p>
-        <h3 class="left-aligned" id="end-easy-answer-label">Answer 1 - 10 points</h3>
-        <p class="left-aligned" id="end-easy-desc-label"></p>
+        <div class="hdiv-left">
+            <img class="big-icon" src="assets/invisible_bloon.webp" id="end-easy-icon">
+            <div>
+                <p class="left-aligned" id="end-easy-label">EASY - Prompt 1</p>
+                <h3 class="left-aligned" id="end-easy-answer-label">Answer 1 - 10 points</h3>
+                <p class="left-aligned" id="end-easy-desc-label"></p>
+            </div>
+        </div>
         <hr>
-        <p class="left-aligned" id="end-medium-label">MEDIUM - Prompt 2</p>
-        <h3 class="left-aligned" id="end-medium-answer-label">Answer 2 - 10 points</h3>
-        <p class="left-aligned" id="end-medium-desc-label"></p>
+        <div class="hdiv-left">
+            <img class="big-icon" src="assets/invisible_bloon.webp" id="end-medium-icon">
+            <div>
+                <p class="left-aligned" id="end-medium-label">MEDIUM - Prompt 2</p>
+                <h3 class="left-aligned" id="end-medium-answer-label">Answer 2 - 15 points</h3>
+                <p class="left-aligned" id="end-medium-desc-label"></p>
+            </div>
+        </div>
         <hr>
-        <p class="left-aligned" id="end-hard-label">HARD - Prompt 3</p>
-        <h3 class="left-aligned" id="end-hard-answer-label">Answer 3 - 10 points</h3>
-        <p class="left-aligned" id="end-hard-desc-label"></p>
+        <div class="hdiv-left">
+            <img class="big-icon" src="assets/invisible_bloon.webp" id="end-hard-icon">
+            <div>
+                <p class="left-aligned" id="end-hard-label">HARD - Prompt 3</p>
+                <h3 class="left-aligned" id="end-hard-answer-label">Answer 3 - 20 points</h3>
+                <p class="left-aligned" id="end-hard-desc-label"></p>
+            </div>
+        </div>
     </div>
 
     <div class="panel-hidden" id="copy-panel">
@@ -65,7 +86,7 @@
     <div class="panel" id="desc-panel">
         <h3>Find the rarest answer for 3 bloons-related prompts.</h3>
         <p>After hitting play, you'll have 25 seconds to come up with an answer. Rarer answers score higher, and the rarest answer is given the title of Golden Bloon.</p>
-        <span></span>
+        <hr>
         <button id="btn-play" class="btn">Play</button>
     </div>
 </body>
