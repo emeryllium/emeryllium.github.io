@@ -138,6 +138,7 @@ function submit(force) {
         document.getElementById('result-rarity-label').textContent = RARITIES[rarity].name;
         document.getElementById('result-points-label').textContent = RARITIES[rarity].points[prompt] + ' Points';
     } else {
+        document.getElementById('result-rarity-icon').src = 'assets/invisible_bloon.webp';
         document.getElementById('result-rarity-label').textContent = 'No answer.';
         document.getElementById('result-points-label').textContent = '0 Points';
     }
