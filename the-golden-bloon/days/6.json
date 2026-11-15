@@ -1,0 +1,133 @@
+[
+  {
+    "prompt": "Name an upgrade in BTD6 that costs at least $50k in Medium mode.",
+    "answers": [
+      [
+        "Sun Temple, Sun Avatar",
+        "True Sun God, Sun God, VTSG, TSG",
+        "Apex Plasma Master, Dart Monkey Paragon, Dart Paragon"
+      ],
+      [
+        "Nautic Siege Core, Sub Paragon, Monkey Sub Paragon, Submarine Paragon",
+        "S.P.I.D.E.R. Monkey, Spider Monkey, Sniper Paragon, Sniper Monkey Paragon",
+        "Navarch of the Seas, Boat Paragon, Bucc Paragon, Buccaneer Paragon, Monkey Bucc Paragon, Monkey Buccaneer Paragon",
+        "Flying Fortress, Big Plane",
+        "Goliath Doomship, Ace Paragon, Monkey Ace Paragon",
+        "Magus Perfectus, Wizard Paragon, Wizard Monkey Paragon",
+        "The Anti-Bloon, Anti Bloon",
+        "Legend of the Night",
+        "Ascended Shadow, Ninja Paragon, Ninja Monkey Paragon",
+        "Banana Central",
+        "Super Mines",
+        "Mega Massive Munitions Factory, Spike Paragon, Spike Factory Paragon"
+      ],
+      [
+        "Ultraboost",
+        "Monkey-Nomics",
+        "Master Builder, Engineer Paragon, Engineer Monkey Paragon, Engi Paragon",
+        "Ballistic Obliteration Missile Bunker, BOMB, Bomb Paragon, Bomb Shooter Paragon",
+        "Glaive Dominus, Boomerang Monkey Paragon, Boomerang Paragon, Boomer Paragon",
+        "Crucible of Steel and Flame, Tack Paragon, Tack Shooter Paragon",
+        "Herald of Everfrost, Ice Paragon, Ice Monkey Paragon",
+        "Ray of Doom, ROD",
+        "M.A.D., MAD",
+        "Monkey Wall Street",
+        "Dark Champion~Costs $55,555 exactly."
+      ],
+      [
+        "Bloon Crush",
+        "Monarch of Storms, Superstorm, Storm Druid",
+        "Popseidon",
+        "Bloon Exclusion Zone, BEZ",
+        "Giganotosaurus"
+      ],
+      [
+        "MOAB Domination, MOAB Dom~Costs 50k exactly.",
+        "Wizard Lord Phoenix, WLP~Costs 50k exactly."
+      ],
+      [
+        "Monkeyopolis~Exploiting a bug before v54.0, it was possible to place infinite farms in one spot, making this the most expensive upgrade ever possible."
+      ]
+    ]
+  },
+  {
+    "prompt": "Name something you can click in BTD6's main menu.",
+    "answers": [
+      [
+        "Quit, Exit, Leave Game, Leave, Quit Game, Exit Game",
+        "Play, Start, Enter, Enter Game, Play Game, Start Game",
+        "Profile, Stats, My Profile, Profile Picture, Picture, Level, Progress Bar, Account, Avatar",
+        "Settings, Options, Volume, Change Volume, Jukebox, Sound Effects, SFX, Change Sound Effects, Change SFX, Backup, Logout, Language, Hotkeys, Advanced Settings, Extras, Creator Support, Support, Support Tools",
+        "Shop, Buy Powers, Double Cash"
+      ],
+      [
+        "Play Social, Social, Co-op, Coop, Quick Match, Create Match, Join Match, My Team, Friends, Team Island, Content Browser, Teams, View Browser, View Content Browser, Edit Challenge, Create Challenge, Edit Odyssey, Create Odyssey, Edit Map, Create Map",
+        "Instas + Powers, Instas & Powers, Instas and Powers, Instas, Powers, Insta Monkeys, Insta Monkeys and Powers, Insta Monkeys + Powers",
+        "Events, Daily Challenge, Challenge, Advanced Challenge, Advanced Daily Challenge, Co-op Daily Challenge, Co-op Challenge",
+        "Achievements",
+        "Daily Reward Chest, Daily Chest, Chest, Daily Reward, Coffin, Egg"
+      ],
+      [
+        "Monkeys, Upgrades, Monkey Menu, Upgrade Menu",
+        "Heroes, Hero Menu, Buy Hero, Hero Skins, Buy Hero Skins",
+        "Legends, DLC, Rogue Legends, Frontier Legends",
+        "Knowledge, Monkey Knowledge, Skill Tree, Skill Points, Monkey Knowledge Points, Enable Monkey Knowledge, Respec All Monkey Knowledge",
+        "Trophy Store, Trophy Shop, Cosmetic Shop, Buy Profile Picture, Buy Cosmetics, Buy Avatar",
+        "Windmill, Monkey Ace, Monkey Pilot, Ace, Plane",
+        "Statue, Fountain, Dart Monkey, Dart, Christmas Tree, Pine Tree",
+        "Patch, Quests, Tales, Tutorials, Experiments",
+        "Odyssey Event, Odyssey, Odyssey Mode, Odyssey Event, Odyssey Challenge",
+        "Race Event, Race, Races, Race Event, Race Challenge",
+        "Boss Event, Boss, Boss Bloon, Boss Bloon Event",
+        "Contested Territory, CT, Contested Territory Event",
+        "Boss Challenge, Boss Rematch"
+      ],
+      [
+        "Mailbox, Redeem Code, Mail, News, New Update, Update Notes",
+        "Shop (Monkey Money), Buy Monkey Money, Monkey Money",
+        "Clock Tower, Clock, Tower, Church, Tall Building, Ninja Monkey, Ninja",
+        "Palm Tree, Tree, Boomer, Boomerang, Boomerang Monkey, Leaves, Palm Tree Leaves, Tree Leaves, Palm Leaves",
+        "House, Monkey Village, Village, Hut, Bomb, Bomb Shooter, Bomb Tower",
+        "Beach, Water, Sand, Monkey Sub, Submarine Monkey, Submarine, Sub",
+        "Collection Event, Collections, Insta Collection Event, Insta Collection, Easter Collection Event, Easter Event, Independence Day Event, Fourth of July Event, 4th of July Event, Halloween Event, Halloween Collection Event, Christmas Collection Event, Christmas Event, Winter Event, Winter Collection Event, Birthday Collection Event, Birthday Event, Birthday, Totem Collection Event, Totem Event",
+        "Gift Box, Gift, Dartling Gift, Skywarden Gift, Desperado Gift, Cake, Beast Handler Gift, Mermonkey Gift"
+      ], 
+      [
+        "Bloons Monkey Tales, New Bloons Animated Series, TV, Television, Animated Series, Animated Show, Bloons Show, Bloons Animated Series, Watch Episodes, Watch Bloons Show, Watch Animated Series, NEW TV~A link that takes you out of the game to watch the new Bloons animted series."
+      ],
+      [
+      ]
+    ]
+  },
+  {
+    "prompt": "Name a special agent from BTD5 Flash, BTD5 Mobile, or BTD5 Deluxe.",
+    "answers": [
+      [
+        "Beekeeper, Beekeeper Pro",
+        "Super Monkey Storm, SMS, Super Monkey Storm Pro",
+        "Monkey Farmer, Banana Farmer, Farmer, Monkey Farmer Pro"
+      ],
+      [
+        "Bloonsday Device, Doomsday Device,  Bloonsday Device Pro",
+        "Angry Squirrel, Squirrel, Angry Squirrel Pro",
+        "Tribal Turtle, Turtle, Tribal Turtle Pro",
+        "Meerkat Spy, Meerkat, Meerkat Spy Pro"
+      ],
+      [
+        "Bloonberry Bush, Bloonberry Bush Pro",
+        "Pontoon, Pontoon Pro",
+        "Portable Lake, Portable Lake Pro"
+      ],
+      [
+        "Watermelon Spitter, Watermelon Spitter Pro",
+        "Radadactyl, Radadactyl Pro, Pterodactyl",
+        "Ninja Kiwi, Ninja Kiwi Pro, Kiwi"
+      ],
+      [
+        "Mad Snowman, Mad Snowman Pro~This special agent is left handed and melts away after 10 rounds."
+      ],
+      [
+      ]
+    ]
+  }
+]
