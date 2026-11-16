@@ -53,10 +53,11 @@
       ],
       [
         "Bloons TD Battles Mobile, Bloons TD Battles, BTD Battles, BTDB, BTD Battles Mobile, BTDB Mobile",
+        "Bloons TD 6, BTD6~Although removed from Scrapyard in v57.2, you can still find a rusty Bloonchipper by fishing in Frontier Legends.",
         "Bloons Monkey City Mobile, Bloons Monkey City, BMC, BMC Mobile"
       ],
       [
-        "Bloons TD 5 Deluxe, BTD5 Deluxe"
+        "Bloons TD 5 Deluxe, BTD5 Deluxe, Bloons TD 5 Plus, BTD5 Plus"
       ],
       [
         "Bloons TD 5 Console, BTD5 Console",
@@ -66,7 +67,7 @@
         "Bloons Monkey City Flash, BMC Flash"
       ],
       [
-        "Bloons TD 6, BTD6~Although removed from Scrapyard in v57.2, you can still find a rusty Bloonchipper by fishing in Frontier Legends."
+        "Bloons Blitz~Repairing the Bloonchipper sucks up bloons in its radius before it breaks down again."
       ],
       [
       ]
@@ -99,7 +100,7 @@
         "Passive"
       ], 
       [
-        "Metal Glacier Freeze~Only white bloons are immune to this damage type."
+        "Metal Glacier Freeze, Glacier Metal Freeze, Metal Glacier Frost, Glacier Metal Frost~Only white bloons are immune to this damage type."
       ],
       [
         "Frost~An unused damage type that can't hit white, lead, or purple bloons."
