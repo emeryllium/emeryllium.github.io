@@ -1,0 +1,109 @@
+[
+  {
+    "prompt": "Name an ability in BTD6 obtained from a tier 4 upgrade.",
+    "answers": [
+      [
+        "Super Monkey Fan Club, Super Fan Club, SMFC",
+        "MOAB Assassin, MOAB Mauler, Mauler, Assassin, MOAB Elim, Elim, MOAB Elimantor",
+        "Blade Maelstrom, Maelstrom, Mael, Super Maelstrom, Smael"
+      ],
+      [
+        "Turbo Charge",
+        "Summon Phoenix, Phoenix",
+        "Bloon Sabotage",
+        "Spike Storm, Sporm",
+        "Overclock"
+      ],
+      [
+        "Ground Zero, GZ", 
+        "Supply Drop, Elite Sniper, Bouncing Bullet",
+        "First Strike Capability, First Strike",
+        "Snowstorm, Snorm, Absolute Zero, AZ",
+        "Glue Strike, Glike, Glue Storm, Glorm",
+        "MOAB Takedown, Monkey Pirates, Pirate Hook, Pirates, Monkey Buccaneer",
+        "IMF Loan",
+        "Call to Arms, CTA"
+      ],
+      [
+        "Transforming Tonic, Tonic, Transformation",
+        "Take Aim",
+        "Redeploy, Support Chinook, Chinook, Moving House",
+        "Crate, Chinook Crate, Cash Crate, Money Crate, Lives Crate",
+        "Bombardment, Artillery, Artillery Battery",
+        "Rocket Storm",
+        "Annihilation, Tech Terror",
+        "Enhanced Darkshift, Dark Champion",
+        "Vine Crush, Jungle's Bounty, Jungle Druid, Vines",
+        "Ice Jet, Arctic Knight",
+        "T Rex Stomp, Trex, Turannosaurus Rex"
+      ],
+      [
+        "Marked to Pop, Bounty Hunter, Bounty~Marked bloons take 2x damage from Desperado Monkeys and give 2x cash per pop."
+      ],
+      [
+        "Nomad Rush, Avenger~Activates passively when bloons leak, increasing range and attack speed."
+      ]
+    ]
+  },
+  {
+    "prompt": "Name a Bloons game with Bloonchipper in it.",
+    "answers": [
+      [
+        "Bloons TD 5 Mobile, Bloons TD 5, BTD5, Bloons Tower Defense 5, BTD5 Mobile, Bloons Tower Defense 5 Mobile"
+      ],
+      [
+        "Bloons TD Battles Mobile, Bloons TD Battles, BTD Battles, BTDB, BTD Battles Mobile, BTDB Mobile",
+        "Bloons Monkey City Mobile, Bloons Monkey City, BMC, BMC Mobile"
+      ],
+      [
+        "Bloons TD 5 Deluxe, BTD5 Deluxe"
+      ],
+      [
+        "Bloons TD 5 Console, BTD5 Console",
+        "Bloons TD Battles Steam, BTD Battles Steam, BTDB Steam",
+        "Bloons TD Battles Flash, BTD Battles Flash, BTDB Flash",
+        "Bloons Monkey City Steam, BMC Steam",
+        "Bloons Monkey City Flash, BMC Flash"
+      ],
+      [
+        "Bloons TD 6, BTD6~Although removed from Scrapyard in v57.2, you can still find a rusty Bloonchipper by fishing in Frontier Legends."
+      ],
+      [
+      ]
+    ]
+  },
+  {
+    "prompt": "Name a damage type (ex. sharp).",
+    "answers": [
+      [
+        "Sharp",
+        "Explosion, Explosive, Bombs"
+      ],
+      [
+        "Magic~Only exists in Bloons Supermonkey 2, Wizard Monkeys use 'energy' instead.",
+        "Normal",
+        "Fire, Flame",
+        "Energy, Arcane, Bolt, Magic Bolt",
+        "Cold, Ice"
+      ],
+      [
+        "Plasma",
+        "Arctic, Arctic Knight, Ice Magic, Magic Ice",
+        "Shatter, Embrittle, Embrit, Ice Shards"
+      ],
+      [
+        "Acid",
+        "Crushing~Only exists in Bloons Adventure Time TD.",
+        "Glacier",
+        "Metal Freeze, Cold Snap",
+        "Passive"
+      ], 
+      [
+        "Metal Glacier Freeze~Only white bloons are immune to this damage type."
+      ],
+      [
+        "Frost~An unused damage type that can't hit white, lead, or purple bloons."
+      ]
+    ]
+  }
+]
