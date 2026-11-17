@@ -6,23 +6,23 @@
         "Easy - Standard, Easy",
         "Easy - Deflation, Deflation",
         "Medium - Standard, Medium, Standard",
-        "Hard - Standard, Hard",
-        "Hard - C.H.I.M.P.S, C.H.I.M.P.S, CHIMPS"
+        "Hard - Standard, Hard"
       ],
       [
-      ],
-      [
+        "Hard - C.H.I.M.P.S, C.H.I.M.P.S, CHIMPS",
         "Easy - Sandbox, Sandbox Easy, Sandbox",
         "Easy - Primary Monkeys Only, Primary Monkeys Only, Primary Only",
+        "Hard - Impoppable, Impoppable"
+      ],
+      [
         "Medium - Reverse, Reverse",
         "Medium - Apopalypse, Apopalypse",
         "Hard - Magic Monkeys Only, Magic Monkeys Only, Magic Only",
         "Hard - Alternate Bloons Rounds, Alternate Bloons Rounds, ABR",
-        "Hard - Impoppable, Impoppable",
+        "Medium - Military Monkeys Only, Military Monkeys Only, Military Only",
         "Hard - Half Cash, Half Cash"
       ],
       [
-        "Medium - Military Monkeys Only, Military Monkeys Only, Military Only",
         "Hard - Sandbox, Sandbox Hard",
         "Hard - Double HP MOABs, Double HP MOABs"
       ],
@@ -37,23 +37,23 @@
     "answers": [
       [
         "Super Monkey Storm, SMS",
+        "Banana Farmer, Monkey Farmer, Farmer"
+      ],
+      [
         "Cash Drop",
-        "Banana Farmer, Monkey Farmer, Farmer",
+        "Thrive",
+        "Tech Bot",
         "Road Spikes"
       ],
       [
-      ],
-      [
-        "Monkey Boost",
-        "Thrive",
         "Time Stop",
         "Glue Trap",
         "Moab Mine",
         "Camo Trap",
-        "Portable Lake",
-        "Tech Bot"
+        "Portable Lake"
       ],
       [
+        "Monkey Boost",
         "Energizing Totem",
         "Pontoon",
         "Banana Farmer Pro, Monkey Farmer Pro",
@@ -76,17 +76,17 @@
     "answers": [
       [
         "Bloons Tower Defense, Bloons TD, BTD",
-        "Bloons TD 4, BTD4",
         "Bloons TD 5 Mobile, BTD5 Mobile, Bloons TD 5, BTD5",
-        "Bloons TD Battles Mobile, BTD Battles Mobile, Bloons TD Battles, BTD Battles, BTDB",
-        "Bloons TD Battles 2 Mobile, BTD Battles 2 Mobile, Bloons TD Battles 2, BTD Battles 2, BTDB2",
         "Bloons TD 6, BTD6"
-      ],
-      [
       ],
       [
         "Bloons Tower Defense 2, Bloons TD 2, BTD2",
         "Bloons Tower Defense 3, Bloons TD 3, BTD3",
+        "Bloons TD 4, BTD4",
+        "Bloons TD Battles Mobile, BTD Battles Mobile, Bloons TD Battles, BTD Battles, BTDB",
+        "Bloons TD Battles 2 Mobile, BTD Battles 2 Mobile, Bloons TD Battles 2, BTD Battles 2, BTDB2"
+      ],
+      [
         "Bloons TD 5 Flash, BTD5 Flash",
         "Bloons TD 5 Deluxe, BTD5 Deluxe",
         "Bloons TD 5 Steam, BTD5 Steam",
