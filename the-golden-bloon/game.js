@@ -87,7 +87,7 @@ const RARITIES = [
 
 const MS_START = Date.UTC(2026, 10, 9) + 18_000_000; // EST
 const MS_DAY = 86_400_000;
-const DAY_NUMBER = Math.floor((Date.now() - MS_START) / MS_DAY);
+const DAY_NUMBER = Math.floor((Date.now() - MS_START) / MS_DAY) % 8;
 
 const MAX_AUTOCORRECT_ERROR = 5;
 const MAX_AUTOCORRECT_ERROR_PERC = 0.2;
